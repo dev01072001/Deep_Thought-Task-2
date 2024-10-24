@@ -1,1 +1,18 @@
-
+All The Relevant Prospect are  shown with Green Colour.
+All the Companies Which Use Probiotics Are shown with Green Colour
+ALl the Company Using Fortification are shown with Blue colour.
+" Example Formula used to find Relevant Prospect-"
+=IF(OR(
+    ISNUMBER(SEARCH("F & B", E12)),
+    ISNUMBER(SEARCH("Bulk", E12)),
+    ISNUMBER(SEARCH("Manufacturer", F12)),
+    ISNUMBER(SEARCH("Manufacturer", G12)),
+    ISNUMBER(SEARCH("Manufacturer", H12)),
+    ISNUMBER(SEARCH("Manufacturer", I12)),
+    ISNUMBER(SEARCH("Brand", F12)),
+    ISNUMBER(SEARCH("Brand", G12)),
+    ISNUMBER(SEARCH("Brand", H12)),
+    ISNUMBER(SEARCH("Brand", I12))
+),
+"Relevant",
+"Not Relevant")
